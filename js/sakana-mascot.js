@@ -11,7 +11,10 @@
     bottomMobile: 6,
     thresholdUp: 0.6,
     thresholdDown: 0.5,
-    manualTimeoutMs: 15000
+    manualTimeoutMs: 15000,
+    smoothFactor: 0.12,
+    stateUpdateIntervalMs: 140,
+    settleDelayMs: 220
   };
 
   const container = document.createElement("div");
@@ -72,13 +75,17 @@
     }).mount(`#${containerId}`);
 
     let currentKey = "chisato";
-    let raf = 0;
     let manual = false;
     let lastManualAt = 0;
     let downX = 0;
     let downY = 0;
     let downAt = 0;
     let moved = false;
+    let running = false;
+    let lastInputAt = 0;
+    let targetP = getProgress();
+    let smoothP = targetP;
+    let lastStateAt = 0;
 
     const next = () => {
       if (typeof widget.nextCharacter === "function") {
@@ -123,41 +130,55 @@
       { passive: true }
     );
 
-    const render = () => {
-      raf = 0;
-      const p = getProgress();
-      if (manual && Date.now() - lastManualAt > cfg.manualTimeoutMs) manual = false;
-      if (p <= 0.03) manual = false;
+    const update = (ts) => {
+      const now = Date.now();
+      if (manual && now - lastManualAt > cfg.manualTimeoutMs) manual = false;
+      if (targetP <= 0.03) manual = false;
 
       if (!manual) {
-        if (currentKey === "chisato" && p >= cfg.thresholdUp) {
+        if (currentKey === "chisato" && smoothP >= cfg.thresholdUp) {
           widget.setCharacter("takina");
           currentKey = "takina";
-        } else if (currentKey === "takina" && p <= cfg.thresholdDown) {
+        } else if (currentKey === "takina" && smoothP <= cfg.thresholdDown) {
           widget.setCharacter("chisato");
           currentKey = "chisato";
         }
       }
 
-      if (!prefersReducedMotion) {
+      if (!prefersReducedMotion && ts - lastStateAt >= cfg.stateUpdateIntervalMs) {
+        lastStateAt = ts;
         widget.setState({
-          i: 0.02 + p * 0.12,
-          s: 0.06 + p * 0.18,
-          d: 0.9 + p * 0.095,
-          r: (p - 0.5) * 40,
-          y: 8 + p * 34
+          i: 0.03 + smoothP * 0.035,
+          s: 0.12 + smoothP * 0.08,
+          d: 0.86 + smoothP * 0.06
         });
       }
     };
 
-    const schedule = () => {
-      if (raf) return;
-      raf = window.requestAnimationFrame(render);
+    const tick = (ts) => {
+      smoothP = smoothP + (targetP - smoothP) * cfg.smoothFactor;
+      update(ts);
+
+      const idle = Date.now() - lastInputAt > cfg.settleDelayMs;
+      const settled = Math.abs(targetP - smoothP) <= 0.002;
+      if (!idle || !settled) {
+        window.requestAnimationFrame(tick);
+      } else {
+        running = false;
+      }
     };
 
-    window.addEventListener("scroll", schedule, { passive: true });
-    window.addEventListener("resize", schedule, { passive: true });
-    schedule();
+    const kick = () => {
+      targetP = getProgress();
+      lastInputAt = Date.now();
+      if (running) return;
+      running = true;
+      window.requestAnimationFrame(tick);
+    };
+
+    window.addEventListener("scroll", kick, { passive: true });
+    window.addEventListener("resize", kick, { passive: true });
+    kick();
   };
 
   mount().catch(() => {});
