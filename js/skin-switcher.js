@@ -11,12 +11,29 @@
   const docEl = document.documentElement;
   const clampKey = (k) => (skins.some((s) => s.key === k) ? k : "default");
 
-  const get = () => clampKey(localStorage.getItem(STORAGE_KEY) || docEl.getAttribute(ATTR) || "default");
+  let memSkin = null;
+
+  const safeGet = () => {
+    try {
+      return localStorage.getItem(STORAGE_KEY);
+    } catch (e) {
+      return null;
+    }
+  };
+
+  const safeSet = (v) => {
+    try {
+      localStorage.setItem(STORAGE_KEY, v);
+    } catch (e) {}
+  };
+
+  const get = () => clampKey(safeGet() || memSkin || docEl.getAttribute(ATTR) || "default");
 
   const apply = (k) => {
     const next = clampKey(k);
     docEl.setAttribute(ATTR, next);
-    localStorage.setItem(STORAGE_KEY, next);
+    memSkin = next;
+    safeSet(next);
     updateLabels(next);
   };
 
@@ -46,7 +63,9 @@
         '<a class="nav-link" target="_self" href="javascript:;" aria-label="Skin Toggle">' +
         '<span id="pcboy-skin-label">皮肤</span>' +
         "</a>";
-      li.addEventListener("click", cycle, { passive: true });
+      li.style.cursor = "pointer";
+      li.addEventListener("click", cycle);
+      li.addEventListener("pointerup", cycle, { passive: true });
       const colorToggle = document.getElementById("color-toggle-btn");
       if (colorToggle && colorToggle.parentNode === navList) {
         navList.insertBefore(li, colorToggle);
@@ -67,15 +86,22 @@
         '<span id="pcboy-skin-label-mobile">皮肤</span>' +
         "</div>" +
         "</a>";
-      cell.addEventListener("click", cycle, { passive: true });
+      cell.style.cursor = "pointer";
+      cell.addEventListener("click", cycle);
+      cell.addEventListener("pointerup", cycle, { passive: true });
       mobileRow.appendChild(cell);
     }
   };
 
   const boot = () => {
-    apply(get());
+    const initial = get();
+    apply(initial);
     mountNavbar();
-    setTimeout(mountNavbar, 400);
+    updateLabels(initial);
+    setTimeout(() => {
+      mountNavbar();
+      updateLabels(get());
+    }, 400);
   };
 
   if (document.readyState === "loading") {
@@ -84,4 +110,3 @@
     boot();
   }
 })();
-

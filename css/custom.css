@@ -8,18 +8,66 @@
   --pcboy-grid-color: rgba(255, 255, 255, 0.1);
   --pcboy-glow-color: rgba(167, 139, 250, 0.26);
   --pcboy-glow-color-2: rgba(34, 211, 238, 0.22);
+  --body-bg-color: #0b1220;
+  --board-bg-color: #111827;
+  --text-color: #d1d5db;
+  --sec-text-color: #9ca3af;
+  --post-text-color: #d1d5db;
+  --post-heading-color: #e5e7eb;
+  --post-link-color: #22d3ee;
+  --link-hover-color: #a78bfa;
+  --link-hover-bg-color: rgba(255, 255, 255, 0.06);
+  --line-color: rgba(148, 163, 184, 0.25);
+  --navbar-bg-color: #111827;
+  --navbar-text-color: #e5e7eb;
+  --subtitle-color: #e5e7eb;
+  --button-hover-bg-color: rgba(255, 255, 255, 0.08);
+  --highlight-bg-color: rgba(255, 255, 255, 0.06);
+  --inlinecode-bg-color: rgba(34, 211, 238, 0.12);
 }
 
 :root[data-pcboy-skin="sunset"] {
   --pcboy-grid-color: rgba(255, 255, 255, 0.09);
   --pcboy-glow-color: rgba(251, 146, 60, 0.26);
   --pcboy-glow-color-2: rgba(244, 114, 182, 0.2);
+  --body-bg-color: #fff7ed;
+  --board-bg-color: #ffffff;
+  --text-color: #3c2f2a;
+  --sec-text-color: #7c2d12;
+  --post-text-color: #3c2f2a;
+  --post-heading-color: #7c2d12;
+  --post-link-color: #ea580c;
+  --link-hover-color: #db2777;
+  --link-hover-bg-color: rgba(251, 146, 60, 0.12);
+  --line-color: rgba(124, 45, 18, 0.18);
+  --navbar-bg-color: #7c2d12;
+  --navbar-text-color: #fff7ed;
+  --subtitle-color: #fff7ed;
+  --button-hover-bg-color: rgba(251, 146, 60, 0.12);
+  --highlight-bg-color: rgba(234, 88, 12, 0.06);
+  --inlinecode-bg-color: rgba(234, 88, 12, 0.12);
 }
 
 :root[data-pcboy-skin="mono"] {
   --pcboy-grid-color: rgba(255, 255, 255, 0.07);
   --pcboy-glow-color: rgba(255, 255, 255, 0.14);
   --pcboy-glow-color-2: rgba(148, 163, 184, 0.14);
+  --body-bg-color: #f5f5f5;
+  --board-bg-color: #ffffff;
+  --text-color: #111827;
+  --sec-text-color: #4b5563;
+  --post-text-color: #111827;
+  --post-heading-color: #111827;
+  --post-link-color: #111111;
+  --link-hover-color: #6b7280;
+  --link-hover-bg-color: rgba(17, 24, 39, 0.06);
+  --line-color: rgba(17, 24, 39, 0.18);
+  --navbar-bg-color: #111111;
+  --navbar-text-color: #f3f4f6;
+  --subtitle-color: #f3f4f6;
+  --button-hover-bg-color: rgba(17, 24, 39, 0.06);
+  --highlight-bg-color: #f3f4f6;
+  --inlinecode-bg-color: rgba(17, 24, 39, 0.1);
 }
 
 body {
@@ -28,9 +76,7 @@ body {
 }
 
 #banner {
-  background-image: radial-gradient(circle at 20% 10%, var(--pcboy-glow-color), transparent 55%),
-    radial-gradient(circle at 80% 30%, var(--pcboy-glow-color-2), transparent 50%),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55));
+  position: relative;
 }
 
 #banner::before {
@@ -38,11 +84,32 @@ body {
   position: absolute;
   inset: 0;
   background-image:
+    radial-gradient(circle at 20% 10%, var(--pcboy-glow-color), transparent 55%),
+    radial-gradient(circle at 80% 30%, var(--pcboy-glow-color-2), transparent 50%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)),
     linear-gradient(var(--pcboy-grid-color) 1px, transparent 1px),
     linear-gradient(90deg, var(--pcboy-grid-color) 1px, transparent 1px);
   background-size: 32px 32px;
   mask-image: radial-gradient(circle at 50% 35%, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   pointer-events: none;
+}
+
+[data-pcboy-skin] body {
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+}
+
+[data-pcboy-skin] #board {
+  background-color: var(--board-bg-color);
+}
+
+[data-pcboy-skin] #navbar {
+  background-color: var(--navbar-bg-color);
+}
+
+[data-pcboy-skin] .markdown-body a,
+[data-pcboy-skin] .index-card .index-header a {
+  color: var(--post-link-color);
 }
 
 #subtitle {
