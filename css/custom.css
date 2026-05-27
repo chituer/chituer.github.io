@@ -47,17 +47,28 @@ body {
   width: var(--pcboy-sakana-size, 220px);
   height: var(--pcboy-sakana-size, 220px);
   pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
 }
 
 #pcboy-sakana-mascot .sakana-widget-app {
   pointer-events: auto;
 }
 
+#pcboy-sakana-mascot.pcboy-sakana-hidden {
+  opacity: 0;
+  transform: translateY(8px) scale(0.92);
+}
+
+#pcboy-sakana-mascot.pcboy-sakana-hidden .sakana-widget-app {
+  pointer-events: none;
+}
+
 @media (max-width: 768px) {
   #pcboy-sakana-mascot {
     width: var(--pcboy-sakana-size-mobile, 180px);
     height: var(--pcboy-sakana-size-mobile, 180px);
-    right: var(--pcboy-sakana-right-mobile, 6px);
+    left: var(--pcboy-sakana-left-mobile, 6px);
+    right: auto;
     bottom: var(--pcboy-sakana-bottom-mobile, 6px);
   }
 }

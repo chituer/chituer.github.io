@@ -7,14 +7,15 @@
     sizeMobile: 180,
     right: 12,
     bottom: 12,
-    rightMobile: 6,
+    leftMobile: 6,
     bottomMobile: 6,
     thresholdUp: 0.6,
     thresholdDown: 0.5,
     manualTimeoutMs: 15000,
     smoothFactor: 0.12,
     stateUpdateIntervalMs: 140,
-    settleDelayMs: 220
+    settleDelayMs: 220,
+    hideOnCommentsMobile: true
   };
 
   const container = document.createElement("div");
@@ -24,7 +25,7 @@
   container.style.setProperty("--pcboy-sakana-size-mobile", `${cfg.sizeMobile + 20}px`);
   container.style.setProperty("--pcboy-sakana-right", `${cfg.right}px`);
   container.style.setProperty("--pcboy-sakana-bottom", `${cfg.bottom}px`);
-  container.style.setProperty("--pcboy-sakana-right-mobile", `${cfg.rightMobile}px`);
+  container.style.setProperty("--pcboy-sakana-left-mobile", `${cfg.leftMobile}px`);
   container.style.setProperty("--pcboy-sakana-bottom-mobile", `${cfg.bottomMobile}px`);
   document.body.appendChild(container);
 
@@ -86,6 +87,8 @@
     let targetP = getProgress();
     let smoothP = targetP;
     let lastStateAt = 0;
+    let commentsEl = null;
+    let lastCommentsLookupAt = 0;
 
     const next = () => {
       if (typeof widget.nextCharacter === "function") {
@@ -130,10 +133,40 @@
       { passive: true }
     );
 
+    const isMobile = () =>
+      typeof window.matchMedia === "function" && window.matchMedia("(max-width: 768px)").matches;
+
+    const isInViewport = (el) => {
+      const rect = el.getBoundingClientRect();
+      return rect.bottom > 0 && rect.top < window.innerHeight;
+    };
+
+    const updateCommentsAvoid = () => {
+      if (!cfg.hideOnCommentsMobile || !isMobile()) {
+        container.classList.remove("pcboy-sakana-hidden");
+        return;
+      }
+
+      if (!commentsEl && Date.now() - lastCommentsLookupAt > 800) {
+        lastCommentsLookupAt = Date.now();
+        commentsEl = document.querySelector(
+          "#comments, #comment, #post-comment, .post-comments, .comments, .giscus, .giscus-widget"
+        );
+      }
+
+      if (!commentsEl) return;
+      if (isInViewport(commentsEl)) {
+        container.classList.add("pcboy-sakana-hidden");
+      } else {
+        container.classList.remove("pcboy-sakana-hidden");
+      }
+    };
+
     const update = (ts) => {
       const now = Date.now();
       if (manual && now - lastManualAt > cfg.manualTimeoutMs) manual = false;
       if (targetP <= 0.03) manual = false;
+      updateCommentsAvoid();
 
       if (!manual) {
         if (currentKey === "chisato" && smoothP >= cfg.thresholdUp) {
