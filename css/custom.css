@@ -125,6 +125,189 @@ body {
   font-weight: 700;
 }
 
+.pcboy-home {
+  max-width: 980px;
+  margin: 18px auto 26px;
+}
+
+.pcboy-card {
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
+}
+
+[data-pcboy-skin="neo"] .pcboy-card {
+  background: rgba(17, 24, 39, 0.62);
+  border-color: rgba(148, 163, 184, 0.18);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.32);
+}
+
+[data-pcboy-skin="sunset"] .pcboy-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(124, 45, 18, 0.14);
+}
+
+[data-pcboy-skin="mono"] .pcboy-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(17, 24, 39, 0.16);
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.08);
+}
+
+.pcboy-profile .pcboy-avatar img {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.pcboy-name {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.pcboy-tagline {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--sec-text-color, #718096);
+}
+
+.pcboy-intro {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-color, #3c4858);
+}
+
+.pcboy-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pcboy-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--text-color, #3c4858);
+  text-decoration: none;
+}
+
+[data-pcboy-skin="neo"] .pcboy-link {
+  background: rgba(17, 24, 39, 0.35);
+  border-color: rgba(148, 163, 184, 0.18);
+}
+
+.pcboy-link:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.pcboy-card-title {
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 12px;
+  letter-spacing: 0.02em;
+}
+
+.pcboy-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.pcboy-stat {
+  border-radius: 12px;
+  padding: 10px 12px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+
+[data-pcboy-skin="neo"] .pcboy-stat {
+  background: rgba(17, 24, 39, 0.28);
+}
+
+.pcboy-stat-num {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.pcboy-stat-label {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--sec-text-color, #718096);
+}
+
+.pcboy-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pcboy-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+}
+
+[data-pcboy-skin="neo"] .pcboy-chip {
+  background: rgba(17, 24, 39, 0.28);
+}
+
+.pcboy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pcboy-list-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.pcboy-list-title {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.pcboy-list-date {
+  font-size: 12px;
+  color: var(--sec-text-color, #718096);
+  white-space: nowrap;
+}
+
+.pcboy-empty {
+  font-size: 13px;
+  color: var(--sec-text-color, #718096);
+}
+
+.pcboy-more {
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--post-link-color, #0366d6);
+  text-decoration: none;
+}
+
+.pcboy-more:hover {
+  text-decoration: underline;
+}
+
 #pcboy-sakana-mascot {
   position: fixed;
   right: var(--pcboy-sakana-right, 12px);
