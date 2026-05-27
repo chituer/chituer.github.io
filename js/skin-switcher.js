@@ -54,6 +54,14 @@
   };
 
   const mountNavbar = () => {
+    let lastTriggerAt = 0;
+    const trigger = () => {
+      const now = Date.now();
+      if (now - lastTriggerAt < 350) return;
+      lastTriggerAt = now;
+      cycle();
+    };
+
     const navList = document.querySelector("#navbarSupportedContent ul.navbar-nav");
     if (navList && !document.getElementById("pcboy-skin-toggle-btn")) {
       const li = document.createElement("li");
@@ -64,8 +72,8 @@
         '<span id="pcboy-skin-label">皮肤</span>' +
         "</a>";
       li.style.cursor = "pointer";
-      li.addEventListener("click", cycle);
-      li.addEventListener("pointerup", cycle, { passive: true });
+      li.addEventListener("click", trigger);
+      li.addEventListener("pointerup", trigger, { passive: true });
       const colorToggle = document.getElementById("color-toggle-btn");
       if (colorToggle && colorToggle.parentNode === navList) {
         navList.insertBefore(li, colorToggle);
@@ -87,8 +95,8 @@
         "</div>" +
         "</a>";
       cell.style.cursor = "pointer";
-      cell.addEventListener("click", cycle);
-      cell.addEventListener("pointerup", cycle, { passive: true });
+      cell.addEventListener("click", trigger);
+      cell.addEventListener("pointerup", trigger, { passive: true });
       mobileRow.appendChild(cell);
     }
   };
