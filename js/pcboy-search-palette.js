@@ -53,6 +53,7 @@
       { label: '首页', url: '/' },
       { label: '项目', url: '/projects/' },
       { label: '工具箱', url: '/tools/' },
+      { label: '系列', url: '/series/' },
       { label: '归档', url: '/archives/' },
       { label: '分类', url: '/categories/' },
       { label: '标签', url: '/tags/' },
