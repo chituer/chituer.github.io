@@ -483,6 +483,55 @@ body {
   right: 10px;
 }
 
+.pcboy-kbd-hint {
+  margin-left: 10px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--sec-text-color, #718096);
+}
+
+.search-word {
+  padding: 0 3px;
+  border-radius: 6px;
+  background: rgba(59, 130, 246, 0.14);
+  border: 1px solid rgba(59, 130, 246, 0.18);
+}
+
+[data-pcboy-skin="neo"] .search-word {
+  background: rgba(34, 211, 238, 0.14);
+  border-color: rgba(34, 211, 238, 0.2);
+}
+
+#pcboy-reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 9998;
+  background: transparent;
+  pointer-events: none;
+}
+
+#pcboy-reading-progress .pcboy-reading-progress-inner {
+  width: 100%;
+  height: 100%;
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  background: linear-gradient(90deg, rgba(59, 130, 246, 0.95), rgba(34, 211, 238, 0.95));
+}
+
+[data-pcboy-skin="sunset"] #pcboy-reading-progress .pcboy-reading-progress-inner {
+  background: linear-gradient(90deg, rgba(234, 88, 12, 0.95), rgba(244, 114, 182, 0.95));
+}
+
+[data-pcboy-skin="mono"] #pcboy-reading-progress .pcboy-reading-progress-inner {
+  background: rgba(17, 24, 39, 0.9);
+}
+
 .pcboy-project-head {
   display: flex;
   align-items: flex-start;
