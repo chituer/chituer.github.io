@@ -265,6 +265,65 @@ body {
   background: rgba(17, 24, 39, 0.28);
 }
 
+.pcboy-chip-btn {
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  font: inherit;
+  color: inherit;
+}
+
+.pcboy-chip-selected {
+  border-color: rgba(59, 130, 246, 0.35);
+  background: rgba(59, 130, 246, 0.10);
+}
+
+.pcboy-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(255, 255, 255, 0.5);
+  color: inherit;
+  outline: none;
+}
+
+[data-pcboy-skin="neo"] .pcboy-input {
+  background: rgba(17, 24, 39, 0.35);
+  border-color: rgba(148, 163, 184, 0.18);
+}
+
+.pcboy-input:focus {
+  border-color: rgba(59, 130, 246, 0.45);
+}
+
+.pcboy-btn-link {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--post-link-color, #0366d6);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+}
+
+.pcboy-btn-link:hover {
+  text-decoration: underline;
+}
+
+.pcboy-toolbox-controls,
+.pcboy-projects-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pcboy-filter-chips {
+  gap: 10px;
+}
+
 .pcboy-list {
   display: flex;
   flex-direction: column;
@@ -363,6 +422,65 @@ body {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
+}
+
+.pcboy-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.pcboy-carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.pcboy-carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.pcboy-carousel-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  display: block;
+}
+
+.pcboy-carousel-slide img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.pcboy-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(255, 255, 255, 0.75);
+  color: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0;
+  cursor: pointer;
+}
+
+[data-pcboy-skin="neo"] .pcboy-carousel-btn {
+  background: rgba(17, 24, 39, 0.65);
+  border-color: rgba(148, 163, 184, 0.18);
+}
+
+.pcboy-carousel-prev {
+  left: 10px;
+}
+
+.pcboy-carousel-next {
+  right: 10px;
 }
 
 .pcboy-project-head {

@@ -388,17 +388,44 @@
     <div class="pcboy-page-subtitle">项目</div>
   </div>
 
+  
+    <div class="pcboy-projects-controls mb-4">
+      <div class="pcboy-chips pcboy-filter-chips" id="pcboy-projects-cats">
+        <button type="button" class="pcboy-chip pcboy-chip-btn pcboy-chip-selected" data-cat="">全部</button>
+        
+          <button type="button" class="pcboy-chip pcboy-chip-btn" data-cat="博客">博客</button>
+        
+          <button type="button" class="pcboy-chip pcboy-chip-btn" data-cat="AI">AI</button>
+        
+      </div>
+    </div>
+  
+
   <div class="pcboy-grid">
     
 
     
       
       
-      <div class="pcboy-card pcboy-project-card">
+      <div class="pcboy-card pcboy-project-card" data-cats="博客">
         
-          <a class="pcboy-project-cover" href="https://pcboy.com.cn" target="_blank" rel="nofollow noopener">
-            <img src="/img/covers/default.png" srcset="/img/loading.gif" lazyload alt="个人博客：pcboy.com.cn">
-          </a>
+          
+            <div class="pcboy-project-cover pcboy-carousel" data-carousel="projects">
+              <div class="pcboy-carousel-track">
+                
+                  <a class="pcboy-carousel-slide" href="https://pcboy.com.cn" target="_blank" rel="nofollow noopener">
+                    <img src="/img/covers/default.png" srcset="/img/loading.gif" lazyload alt="个人博客：pcboy.com.cn 1">
+                  </a>
+                
+                  <a class="pcboy-carousel-slide" href="https://pcboy.com.cn" target="_blank" rel="nofollow noopener">
+                    <img src="/img/covers/undraw_dashboard_p93p.png" srcset="/img/loading.gif" lazyload alt="个人博客：pcboy.com.cn 2">
+                  </a>
+                
+              </div>
+              <button type="button" class="pcboy-carousel-btn pcboy-carousel-prev" aria-label="上一张">‹</button>
+              <button type="button" class="pcboy-carousel-btn pcboy-carousel-next" aria-label="下一张">›</button>
+            </div>
+          
         
 
         <div class="pcboy-project-head">
@@ -409,6 +436,15 @@
             <span class="pcboy-badge pcboy-badge-success">维护中</span>
           </div>
         </div>
+
+        
+          <div class="pcboy-chips mt-2">
+            
+              
+              <span class="pcboy-chip">博客</span>
+            
+          </div>
+        
 
         <div class="pcboy-project-desc">Hexo + Fluid 的个人站，包含皮肤切换、看板角色、统计、封面随机等装修。</div>
 
@@ -458,7 +494,7 @@
     
       
       
-      <div class="pcboy-card pcboy-project-card">
+      <div class="pcboy-card pcboy-project-card" data-cats="AI">
         
 
         <div class="pcboy-project-head">
@@ -469,6 +505,15 @@
             <span class="pcboy-badge pcboy-badge-warn">进行中</span>
           </div>
         </div>
+
+        
+          <div class="pcboy-chips mt-2">
+            
+              
+              <span class="pcboy-chip">AI</span>
+            
+          </div>
+        
 
         <div class="pcboy-project-desc">记录 LLM/Agent 相关实验与工程化落地笔记。</div>
 
@@ -649,6 +694,8 @@
   
 <script src="/js/sakana-mascot.js"></script>
 <script src="/js/skin-switcher.js"></script>
+<script src="/js/pcboy-toolbox-filter.js"></script>
+<script src="/js/pcboy-projects.js"></script>
 
 
 

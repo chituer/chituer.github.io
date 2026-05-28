@@ -389,15 +389,55 @@
   </div>
 
   
+    <div class="pcboy-toolbox-controls mb-4">
+      <input id="pcboy-toolbox-search" class="pcboy-input" type="search" placeholder="搜索工具 / 标签 / 分类" autocomplete="off">
+      
+        <div class="pcboy-chips pcboy-filter-chips" id="pcboy-toolbox-tags">
+          <button type="button" class="pcboy-chip pcboy-chip-btn pcboy-chip-selected" data-tag="">全部</button>
+          
+            <button type="button" class="pcboy-chip pcboy-chip-btn" data-tag="2fa">2fa</button>
+          
+            <button type="button" class="pcboy-chip pcboy-chip-btn" data-tag="cd">cd</button>
+          
+            <button type="button" class="pcboy-chip pcboy-chip-btn" data-tag="ci">ci</button>
+          
+            <button type="button" class="pcboy-chip pcboy-chip-btn" data-tag="llm">llm</button>
+          
+            <button type="button" class="pcboy-chip pcboy-chip-btn" data-tag="local">local</button>
+          
+            <button type="button" class="pcboy-chip pcboy-chip-btn" data-tag="mac">mac</button>
+          
+            <button type="button" class="pcboy-chip pcboy-chip-btn" data-tag="package">package</button>
+          
+            <button type="button" class="pcboy-chip pcboy-chip-btn" data-tag="password">password</button>
+          
+            <button type="button" class="pcboy-chip pcboy-chip-btn" data-tag="terminal">terminal</button>
+          
+        </div>
+      
+      <button type="button" class="pcboy-btn-link" id="pcboy-toolbox-reset">重置</button>
+    </div>
+  
+
+  
 
   
     
-    <div class="pcboy-card pcboy-toolbox-category mb-4">
+    <div class="pcboy-card pcboy-toolbox-category mb-4" data-category="终端">
       <div class="pcboy-card-title">终端</div>
       <div class="pcboy-toolbox-items">
         
           
-          <a class="pcboy-toolbox-item" href="https://iterm2.com/" target="_blank" rel="nofollow noopener">
+          <a
+            class="pcboy-toolbox-item"
+            href="https://iterm2.com/"
+            target="_blank"
+            rel="nofollow noopener"
+            data-name="iTerm2"
+            data-desc="Mac 终端利器，配合 zsh/oh-my-zsh 使用。"
+            data-tags="mac|terminal"
+            data-category="终端"
+          >
             <div class="pcboy-toolbox-item-name">iTerm2</div>
             <div class="pcboy-toolbox-item-desc">Mac 终端利器，配合 zsh/oh-my-zsh 使用。</div>
             
@@ -414,7 +454,16 @@
           </a>
         
           
-          <a class="pcboy-toolbox-item" href="https://brew.sh/" target="_blank" rel="nofollow noopener">
+          <a
+            class="pcboy-toolbox-item"
+            href="https://brew.sh/"
+            target="_blank"
+            rel="nofollow noopener"
+            data-name="Homebrew"
+            data-desc="macOS 包管理器。"
+            data-tags="mac|package"
+            data-category="终端"
+          >
             <div class="pcboy-toolbox-item-name">Homebrew</div>
             <div class="pcboy-toolbox-item-desc">macOS 包管理器。</div>
             
@@ -434,12 +483,21 @@
     </div>
   
     
-    <div class="pcboy-card pcboy-toolbox-category mb-4">
+    <div class="pcboy-card pcboy-toolbox-category mb-4" data-category="AI">
       <div class="pcboy-card-title">AI</div>
       <div class="pcboy-toolbox-items">
         
           
-          <a class="pcboy-toolbox-item" href="https://chat.openai.com/" target="_blank" rel="nofollow noopener">
+          <a
+            class="pcboy-toolbox-item"
+            href="https://chat.openai.com/"
+            target="_blank"
+            rel="nofollow noopener"
+            data-name="ChatGPT"
+            data-desc="日常写作/总结/代码辅助。"
+            data-tags="llm"
+            data-category="AI"
+          >
             <div class="pcboy-toolbox-item-name">ChatGPT</div>
             <div class="pcboy-toolbox-item-desc">日常写作/总结/代码辅助。</div>
             
@@ -453,7 +511,16 @@
           </a>
         
           
-          <a class="pcboy-toolbox-item" href="https://ollama.com/" target="_blank" rel="nofollow noopener">
+          <a
+            class="pcboy-toolbox-item"
+            href="https://ollama.com/"
+            target="_blank"
+            rel="nofollow noopener"
+            data-name="Ollama"
+            data-desc="本地运行大模型。"
+            data-tags="local|llm"
+            data-category="AI"
+          >
             <div class="pcboy-toolbox-item-name">Ollama</div>
             <div class="pcboy-toolbox-item-desc">本地运行大模型。</div>
             
@@ -473,12 +540,21 @@
     </div>
   
     
-    <div class="pcboy-card pcboy-toolbox-category mb-4">
+    <div class="pcboy-card pcboy-toolbox-category mb-4" data-category="云与部署">
       <div class="pcboy-card-title">云与部署</div>
       <div class="pcboy-toolbox-items">
         
           
-          <a class="pcboy-toolbox-item" href="https://github.com/features/actions" target="_blank" rel="nofollow noopener">
+          <a
+            class="pcboy-toolbox-item"
+            href="https://github.com/features/actions"
+            target="_blank"
+            rel="nofollow noopener"
+            data-name="GitHub Actions"
+            data-desc="自动构建与部署。"
+            data-tags="ci|cd"
+            data-category="云与部署"
+          >
             <div class="pcboy-toolbox-item-name">GitHub Actions</div>
             <div class="pcboy-toolbox-item-desc">自动构建与部署。</div>
             
@@ -498,12 +574,21 @@
     </div>
   
     
-    <div class="pcboy-card pcboy-toolbox-category mb-4">
+    <div class="pcboy-card pcboy-toolbox-category mb-4" data-category="安全">
       <div class="pcboy-card-title">安全</div>
       <div class="pcboy-toolbox-items">
         
           
-          <a class="pcboy-toolbox-item" href="https://1password.com/" target="_blank" rel="nofollow noopener">
+          <a
+            class="pcboy-toolbox-item"
+            href="https://1password.com/"
+            target="_blank"
+            rel="nofollow noopener"
+            data-name="1Password"
+            data-desc="密码管理与 2FA。"
+            data-tags="2fa|password"
+            data-category="安全"
+          >
             <div class="pcboy-toolbox-item-name">1Password</div>
             <div class="pcboy-toolbox-item-desc">密码管理与 2FA。</div>
             
@@ -661,6 +746,8 @@
   
 <script src="/js/sakana-mascot.js"></script>
 <script src="/js/skin-switcher.js"></script>
+<script src="/js/pcboy-toolbox-filter.js"></script>
+<script src="/js/pcboy-projects.js"></script>
 
 
 
