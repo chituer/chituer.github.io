@@ -211,6 +211,13 @@
   </url>
   
   <url>
+    <loc>https://www.pcboy.com.cn/tags/Hexo/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.pcboy.com.cn/tags/AI/</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -232,14 +239,14 @@
   </url>
   
   <url>
-    <loc>https://www.pcboy.com.cn/tags/Hexo/</loc>
+    <loc>https://www.pcboy.com.cn/tags/Java/</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.pcboy.com.cn/tags/Java/</loc>
+    <loc>https://www.pcboy.com.cn/tags/%E6%9C%AF%E8%AF%AD/</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -261,13 +268,6 @@
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.pcboy.com.cn/tags/%E6%9C%AF%E8%AF%AD/</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
