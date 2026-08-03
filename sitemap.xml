@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.pcboy.com.cn/2026/08/03/MapStruct-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2026-08-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.pcboy.com.cn/2026/07/28/Oracle-SQL-%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B%EF%BC%9A%E8%A1%A8%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%A7%86%E5%9B%BE%E5%90%8C%E4%B9%89%E8%AF%8D%E4%B8%8E%E6%9D%83%E9%99%90%E6%8E%88%E6%9D%83/</loc>
     
     <lastmod>2026-07-28</lastmod>
@@ -256,7 +265,7 @@
 
   <url>
     <loc>https://www.pcboy.com.cn/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -264,308 +273,329 @@
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/Linux/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/Git/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/GitHub/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/rebase/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/Git-Flow/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/GitHub-Flow/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.pcboy.com.cn/tags/%E9%80%9F%E6%9F%A5%E8%A1%A8/</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.pcboy.com.cn/tags/reset/</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.pcboy.com.cn/tags/revert/</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.pcboy.com.cn/tags/reflog/</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.pcboy.com.cn/tags/%E6%95%85%E9%9A%9C%E6%81%A2%E5%A4%8D/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/GitHub-Actions/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/GitLab-CI/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/CI-CD/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/DevOps/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.pcboy.com.cn/tags/GitLab/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <loc>https://www.pcboy.com.cn/tags/reset/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pcboy.com.cn/tags/revert/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pcboy.com.cn/tags/reflog/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pcboy.com.cn/tags/%E6%95%85%E9%9A%9C%E6%81%A2%E5%A4%8D/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pcboy.com.cn/tags/%E9%80%9F%E6%9F%A5%E8%A1%A8/</loc>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/Java/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/JDK/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/JVM/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.pcboy.com.cn/tags/Mac/</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.pcboy.com.cn/tags/%E6%95%88%E7%8E%87/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <loc>https://www.pcboy.com.cn/tags/GitLab/</loc>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/IntelliJ-IDEA/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.pcboy.com.cn/tags/MySQL/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <loc>https://www.pcboy.com.cn/tags/Mac/</loc>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.pcboy.com.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.pcboy.com.cn/tags/SQL/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <loc>https://www.pcboy.com.cn/tags/%E6%95%88%E7%8E%87/</loc>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/Markdown/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/%E5%86%99%E4%BD%9C/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/%E6%96%87%E6%A1%A3/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pcboy.com.cn/tags/MySQL/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pcboy.com.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pcboy.com.cn/tags/SQL/</loc>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/Oracle/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/PL-SQL/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.pcboy.com.cn/tags/Hexo/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <loc>https://www.pcboy.com.cn/tags/MapStruct/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pcboy.com.cn/tags/%E5%AF%B9%E8%B1%A1%E6%98%A0%E5%B0%84/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pcboy.com.cn/tags/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90/</loc>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/AI/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/LLM/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pcboy.com.cn/tags/Hexo/</loc>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/%E5%9B%BE%E6%A0%87/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/%E8%AF%BB%E4%B9%A6/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/tags/%E6%9C%AF%E8%AF%AD/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -574,28 +604,28 @@
   
   <url>
     <loc>https://www.pcboy.com.cn/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/categories/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/categories/%E8%AF%BB%E4%B9%A6/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.pcboy.com.cn/categories/%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
